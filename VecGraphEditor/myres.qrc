@@ -1,0 +1,13 @@
+<RCC>
+    <qresource prefix="/Icon">
+        <file>Icons/new.png</file>
+        <file>Icons/open.png</file>
+        <file>Icons/save.png</file>
+        <file>Icons/ellipse (1).png</file>
+        <file>Icons/ellipse (2).png</file>
+        <file>Icons/rectangle.png</file>
+        <file>Icons/line.png</file>
+        <file>Icons/palitra.png</file>
+        <file>Icons/eraser.png</file>
+    </qresource>
+</RCC>

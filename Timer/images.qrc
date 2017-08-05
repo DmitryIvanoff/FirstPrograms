@@ -1,0 +1,6 @@
+<RCC>
+    <qresource prefix="/icons">
+        <file>Images/jp.jpg</file>
+        <file>Images/setwalls.ru-64409.jpg</file>
+    </qresource>
+</RCC>
