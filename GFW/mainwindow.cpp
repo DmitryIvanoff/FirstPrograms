@@ -5,8 +5,9 @@ MainWindow::MainWindow(QWidget *parent) :
     QMainWindow(parent),
     ui(new Ui::MainWindow)
 {
-    installEventFilter(this);
+
     ui->setupUi(this);
+    installEventFilter(this);
     scene =new QGraphicsScene(this);
     ui->graphicsView->setScene(scene);
     scene->setSceneRect(ui->graphicsView->rect());
@@ -219,9 +220,9 @@ void MainWindow::on_commandLinkButton_clicked()
 
 void MainWindow::on_lineEdit_editingFinished()
 {
-    QString str();
-    QString buffer();
-    QVector<int> numbers();
+    QString str;
+    QString buffer;
+    QVector<int> numbers;
     str=ui->lineEdit->text();
     int i=0;
     while ((i<str.length()))

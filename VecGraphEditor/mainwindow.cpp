@@ -7,8 +7,8 @@ MainWindow::MainWindow(QWidget *parent) :
     ui(new Ui::MainWindow)
 {
 
-    setMouseTracking(true);
     ui->setupUi(this);
+    setMouseTracking(true);
     palitra=new QColorDialog(this);
     scene =new QGraphicsScene(this);
     ui->graphicsView->setScene(scene);
@@ -19,8 +19,8 @@ MainWindow::MainWindow(QWidget *parent) :
     scene->addRect(scene->sceneRect(),QPen(Qt::red));
     ui->statusBar->addWidget(lbl_x);
     ui->statusBar->addWidget(lbl_y);
-    currentItem=NULL;
-    selectedItem=NULL;
+    currentItem=nullptr;
+    selectedItem=nullptr;
     scene->installEventFilter(this);
     ui->graphicsView->installEventFilter(this);
     connect(palitra,SIGNAL(colorSelected(QColor)),this,SLOT(setColor(QColor)));
@@ -38,10 +38,6 @@ MainWindow::MainWindow(QWidget *parent) :
 MainWindow::~MainWindow()
 {
     delete ui;
-    palitra->deleteLater();
-    scene->deleteLater();
-    lbl_x->deleteLater();
-    lbl_y->deleteLater();
     delete cursor;
 }
 

@@ -656,10 +656,10 @@ void MyItem::gfDrawCircle(int x0, int y0, double radius, RGBPIXEL color)
 
     gfDrawPolygon(X, Y, n, color);
     gfFillPolygonEOMode(X, Y, n, color);
-    delete X;
-    delete Y;
-    delete fX;
-    delete fY;
+    delete [] X;
+    delete [] Y;
+    delete [] fX;
+    delete [] fY;
 }
 
 void MyItem::gfDrawDashedLine(int x0, int y0, int x1, int y1, RGBPIXEL color, int width, LineCaps captype, const QVector<int> &p)

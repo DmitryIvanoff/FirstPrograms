@@ -9,7 +9,7 @@ MainWindow::MainWindow(QWidget *parent) :
 
 {
     ui->setupUi(this);
-    this->setWindowTitle("Таймер");
+    this->setWindowTitle("Таймер выключения компа");
     this->setWindowIcon(icon);
     time=new QTime();
     timer = new QTimer();

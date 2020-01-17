@@ -32,9 +32,9 @@ public:
     void SetObject(int);   //Задает тип текущего обЪекта
     void gfDrawExample(int);   //Рисуетзаданные примеры
  protected:
-    void paint(QPainter *painter, const QStyleOptionGraphicsItem *option, QWidget *widget);
-     QRectF boundingRect() const;
-     void advance(int phase);
+     void paint(QPainter *painter, const QStyleOptionGraphicsItem *option, QWidget *widget);
+     QRectF boundingRect() const override ;
+     void advance(int phase) override;
 
      void dragEnterEvent(QGraphicsSceneDragDropEvent *event) Q_DECL_OVERRIDE;
      void dragLeaveEvent(QGraphicsSceneDragDropEvent *event) Q_DECL_OVERRIDE;
